@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Curso 1 de Javascript da Rockeseat </title>
+		<meta charset="utf-8"/>
+
+	</head>
+
+	<body id="b">
+        <button class="botao"> criar quadrado </button>
+
+		<script>
+        /* Módulo 2 - exec1 e 2
+            var element = document.querySelector('button.botao');
+            element.onclick = quadrado;
+           function quadrado()
+           {
+                var div = document.createElement('div');
+               div.style.width='100px';
+               div.style.height='100px';
+               div.style.backgroundColor='#f00';
+               div.onmouseover=function(){
+                   var a = getRandomColor();
+                   div.style.backgroundColor = a;
+               }
+
+               document.body.appendChild(div);
+           }
+       // function trocarCor(div){alert('aqui');
+          //  div.style.backgroundColor=getRandomColor;
+       // }
+            function getRandomColor() {
+                var letters = "0123456789ABCDEF";
+                var color = "#";
+                for (var i = 0; i < 6; i++) {
+                     color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+            }*/
+        /*exec 3 e 4*/
+        var nomes = ["Diego","Gabriel","Lucas"];
+        var ul = document.createElement('ul');
+        var il = document.createElement('li');
+        var text1 = document.createTextNode(nomes[0]);
+        var il2 = document.createElement('li');
+        var text2 = document.createTextNode(nomes[1]);
+        var il3 = document.createElement('li');
+        var text3 = document.createTextNode(nomes[2]);
+        il.appendChild(text1);
+        il2.appendChild(text2);
+        il3.appendChild(text3);
+        ul.appendChild(il);
+        ul.appendChild(il2);
+        ul.appendChild(il3);
+        document.body.appendChild(ul);
+        var input = document.createElement('input');
+        input.type = 'text';
+        input.name='nome';
+        document.body.appendChild(input);
+        var button = document.createElement('button');
+        button.onclick = adicionar;
+        var textoBotao = document.createTextNode('adicionar');
+        button.appendChild(textoBotao);
+        document.body.appendChild(button);
+        function adicionar(){
+            var nome = input.value;
+            var li = document.createElement('li');
+            var texto = document.createTextNode(nome);
+            li.appendChild(texto);
+            ul.appendChild(li);
+        }
+
+
+
+        </script>
+	</body>
+</html>
