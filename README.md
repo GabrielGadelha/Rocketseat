@@ -7,6 +7,7 @@ Node com express no backend
     Inicia o projeto back com o comando: npm init -y
     Em seguinda instala o express: npm install express
     Em seguida começamos a codar o servidor no index.js
+    Diferente do pessoal que ministra o curso, utilizei o banco de dados PostgreSQL
     
 React no front
     Executar o comando: npx create-react-app nomedoApp 
